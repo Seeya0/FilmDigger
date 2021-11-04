@@ -1,7 +1,8 @@
-import './App.css';
-import { BrowserRouter, Switch } from 'react-router-dom';
-import { Container } from '@material-ui/core';
-import Header from './components/Header/Header';
+import "./App.css";
+import { BrowserRouter, Switch } from "react-router-dom";
+import { Container } from "@material-ui/core";
+import Header from "./components/Header/Header";
+import MainNav from "./components/MainNav/MainNav";
 
 function App() {
   return (
@@ -9,11 +10,10 @@ function App() {
       <Header />
       <div className="app">
         <Container>
-          <Switch>
-
-          </Switch>
+          <Switch></Switch>
         </Container>
       </div>
+      <MainNav />
     </BrowserRouter>
   );
 }
